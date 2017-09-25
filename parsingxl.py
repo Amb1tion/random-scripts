@@ -20,17 +20,17 @@ for row in rows:
             total.append(num)
             percentage=(num/1100)*100
             print(cell.value)
-            if percentage >= 70:
+            if percentage >= 70 and percentage < 80:
                 aboveseventy.append(num)
             if percentage >= 80:
                 aboveeighty.append(num)
         else:
             print(cell.value)
 
-print("Ratio of students above 70%: {}".format((len(aboveseventy)/len(total))*100)
-     + "\nRatio of students above 80%: {}".format((len(aboveeighty)/len(total))*100)
-      +"\nNumber of students above 70%: {}".format(len(aboveseventy))
-      +"\nNumber of students above 80%: {}".format(len(aboveeighty))
+print("Ratio of students with A grade: {}".format((len(aboveseventy)/len(total))*100)
+     + "\nRatio of students with A1 grade: {}".format((len(aboveeighty)/len(total))*100)
+      +"\nNumber of students with A grade: {}".format(len(aboveseventy))
+      +"\nNumber of students with A1 grade: {}".format(len(aboveeighty))
       +"\nTotal number of students passed: {}".format(len(total)))
 
 
