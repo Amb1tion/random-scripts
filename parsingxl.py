@@ -20,9 +20,9 @@ for row in rows:
             total.append(num)
             percentage=(num/1100)*100
             print(cell.value)
-            if percentage > 70:
+            if percentage >= 70:
                 aboveseventy.append(num)
-            if percentage > 80:
+            if percentage >= 80:
                 aboveeighty.append(num)
         else:
             print(cell.value)
